@@ -7,6 +7,7 @@ Adafruit_ADS1115 ads;  /* Use this for the 16-bit version */
 
 void setup(void)
 {
+  Wire.begin(9, 4);
   Serial.begin(115200);
   Serial.println("Hello!");
 
